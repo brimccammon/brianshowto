@@ -13,14 +13,14 @@ Steps:
     2. Under [CA_Defautls] change dir from ../../CA to ../CA
     3. Under [ policy_match ] change all the ones that are set to match to supplied
     4. Under [ req_distinguished_name ] change all entries to the correct ones for the location on the CA
-3.Create the index.txt file
+3. Create the index.txt file
 ````
 touch /etc/pki/CA/index.txt
 ````
 4. Create the serial file
 ````
 echo ’01’ > /etc/pki/CA/serial
-````z
+````
 5. Generate the CA Cert and Key
 ````
 openssl req -new -x509 -keyout private/cakey.pem -out cacert.pem -days 3650
