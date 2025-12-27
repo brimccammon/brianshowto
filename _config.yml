@@ -1,0 +1,13 @@
+title: Brian's How To
+description: How Tos to Help You!
+
+theme: minima
+author: Brian McCammon
+
+show_excerpts: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+google_analytics: G-VRXD5H3PWP
