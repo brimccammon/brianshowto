@@ -43,4 +43,4 @@ then they can be committed by clicking the check mark at the top
 
 then sync the commits by clicking the arrows at the bottom.
 
-![VSCode Sync]{{ site.baseurl }}(/assets/images/VSCode-Sync.jpg)
+![VSCode Sync]({{ site.baseurl }}/assets/images/VSCode-Sync.jpg)
