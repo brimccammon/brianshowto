@@ -3,7 +3,6 @@ layout: post
 title: DD for Backups
 ---
 
-
 I wanted a way to create a backup of my whole hard drive or just a partition of the drive.  In windows I use Ghost or Acronis but for Linux I wanted something free and easy to use.  DD is build into Linux and works great.  I like that it is possible to compress the image with gzip.  Here is how to do backups with DD.
 
 Compressed Backup

@@ -3,7 +3,6 @@ layout: post
 title: SSH Without a Password
 ---
 
-
 On the client generate a new rsa ssh key.
 
 NOTE: When prompted for a passphrase leave blank (just hit enter).
