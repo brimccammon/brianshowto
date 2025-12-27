@@ -32,7 +32,9 @@ openssl ca -gencrl -out crl.pem
 
 Once that is done the server is ready to create certs from requests.  I do this by placing the cert request in a directory accessible by both the CA and the requester.  Once the request has been generated and is accessable by the CA run the following command to generate the cert.
 
+````
 openssl ca -in /mnt/cert-request.txt  -out /mnt/server.cer -days 365
+````
 
 This will create the cert server.cer (cer is used for IIS, if a different extension is needed then replace cer with what is desired) and it will be good for 1 year.  Once the cert is generated it is ready to be applied to the requester.
 
