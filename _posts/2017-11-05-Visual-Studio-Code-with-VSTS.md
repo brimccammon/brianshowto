@@ -31,16 +31,16 @@ Paste the code and click continue then sign in using the credentials to the Micr
 
 VS Code is now connected to a project repository in VSTS.  Now once any changes are made they will show up in Source Control (Ctrl + Shift + G)
 
-![VSCode SCM](/assets/images/VSCode-SCM-300x227.jpg)
+![VSCode SCM]({{ "/assets/images/VSCode-SCM-300x227.jpg" }})
 
 and the changes can be staged by clicking the plus next to the file
 
-![VSCode Stage](/assets/images/VSCode-Stage-300x21.jpg)
+![VSCode Stage]({{ "/assets/images/VSCode-Stage-300x21.jpg" }})
 
 then they can be committed by clicking the check mark at the top
 
-![VSCode Commit](/assets/images/VSCode-Commit-300x36.jpg)
+![VSCode Commit]({{ "/assets/images/VSCode-Commit-300x36.jpg" }})
 
 then sync the commits by clicking the arrows at the bottom.
 
-![VSCode Sync](/assets/images/VSCode-Sync.jpg)
+![VSCode Sync]{{ "(/assets/images/VSCode-Sync.jpg" }})
