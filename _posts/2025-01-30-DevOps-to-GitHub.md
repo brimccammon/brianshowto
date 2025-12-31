@@ -5,10 +5,10 @@ title: Azure DevOps Repo to GitHub
 
 I currently have sevral private repos on Azure DevOps that I want to move to GitHub.  The easist way I could find to do it is to mirror the DevOps repo to my machine and then push it to GitHub.  To do this either make a directory or change directory to where you want the repo files to be.
 
-''''
+````
 mkdir ~/GitTransfer
 cd ~/GitTransfer
-''''
+````
 
 After the directory has been made and changed to it, mirror the DevOps repo.  I access my repos with SSH so I use the SSH for both DevOps and GitHub.  If doing this be sure to add the key first.
 
