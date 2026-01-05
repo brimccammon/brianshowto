@@ -3,7 +3,7 @@ layout: post
 title: Ubuntu Server Disk Resize
 ---
 
-I have had the need to expand the disk an Ubuntu Server so I thought I would lay out the steps.  First step which I won't cover is to expand the disk, for me this is though my hypervisor.  Once the virtual disk has been expanded proceed with the following steps.
+I have had the need to expand the disk on an Ubuntu Server so I thought I would lay out the steps.  First step which I won't cover is to expand the disk, for me this is though my hypervisor.  Once the virtual disk has been expanded proceed with the following steps.
 
 1. Verify the OS is seeing the drive has extra space on it
 ````
