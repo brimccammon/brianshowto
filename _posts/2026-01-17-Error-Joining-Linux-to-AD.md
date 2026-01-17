@@ -18,11 +18,13 @@ Address: 192.168.122.13
 ````
 
 2. Set the hostname to the FQDN:
+
 ````
 sudo hostnamectl set-hostname fedora.test.local
 ````
 
 3. Finally the problem command:
+
 ````
 brian@fedora:~$ sudo realm join test.local -v
 * Resolving: _ldap._tcp.test.local
