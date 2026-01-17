@@ -33,7 +33,7 @@ realm: Couldn't authenticate as Administrator@TEST.LOCAL: KDC has no support for
 
 I went down the rabbit hole of all the things that could cause the issue, from not having the LDAPS cert trusted, editing the krb5.conf to GPO to set the Kerberos encryption types.  The actuall solution was easier than all of that.  In AD I had to go to the user I was using to join the domain and check both:
 
-"This account supports Kerberos AES 128 bit encryption."
+"This account supports Kerberos AES 128 bit encryption."  
 "This account supports Kerberos AES 256 bit encryption."
 
 ![User Settings]({{ site.baseurl }}/assets/images/AD-User-Settings.png)
