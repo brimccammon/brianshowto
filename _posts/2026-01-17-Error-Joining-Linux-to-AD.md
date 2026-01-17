@@ -116,3 +116,14 @@ Created symlink '/etc/systemd/system/multi-user.target.wants/oddjobd.service' â†
 ````
 
 The laptop is now joined to the AD domain.
+
+Just some tips:
+* Enable oodjob service
+    ````
+    systemctl enable --now oddjobd.service
+    ````
+* The user name will be in the format user@Domain.local.  In my example it would be administrator@Test.local.  As always Linux is case sensitive.
+* Add the user to sudoers
+    ````
+    sudo usermod -aG wheel username
+    ````
