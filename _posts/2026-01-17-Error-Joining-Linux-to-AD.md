@@ -7,31 +7,31 @@ My lab has been running AD since 2002.  So I started with Windows Server 2000 an
 
 1. Make sure the domain is DNS resolvable:
 
-````
-brian@fedora:~$ nslookup test.local
-Server:         127.0.0.53
-Address:        127.0.0.53#53
+    ````
+    brian@fedora:~$ nslookup test.local
+    Server:         127.0.0.53
+    Address:        127.0.0.53#53
 
-Non-authoritative answer:
-Name:   test.local
-Address: 192.168.122.13
-````
+    Non-authoritative answer:
+    Name:   test.local
+    Address: 192.168.122.13
+    ````
 
 2. Set the hostname to the FQDN:
 
-````
-sudo hostnamectl set-hostname fedora.test.local
-````
+    ````
+    sudo hostnamectl set-hostname fedora.test.local
+    ````
 
 3. Finally the problem command:
 
-````
-brian@fedora:~$ sudo realm join test.local -v
-* Resolving: _ldap._tcp.test.local
-* Performing LDAP DSE lookup on: 192.168.122.13
-* Successfully discovered: Test.local
-realm: Couldn't authenticate as Administrator@TEST.LOCAL: KDC has no support for encryption type 
-````
+    ````
+    brian@fedora:~$ sudo realm join test.local -v
+    * Resolving: _ldap._tcp.test.local
+    * Performing LDAP DSE lookup on: 192.168.122.13
+    * Successfully discovered: Test.local
+    realm: Couldn't authenticate as Administrator@TEST.LOCAL: KDC has no support for encryption type 
+    ````
 
 I went down the rabbit hole of all the things that could cause the issue, from not having the LDAPS cert trusted, editing the krb5.conf to GPO to set the Kerberos encryption types.  The actuall solution was easier than all of that.  In AD I had to go to the user I was using to join the domain and check both:
 
