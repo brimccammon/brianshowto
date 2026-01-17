@@ -5,7 +5,7 @@ title: Error Joining Linux to AD
 
 My lab has been running AD since 2002.  So I started with Windows Server 2000 and I have upgraded to every version since.  When in 2025 when I tried to join a Linux (Fedora 43 KDE) laptop to my AD I ran into an issue.  I followed the recommneded steps:
 
-1. Make sure the domain is DNS resolvable
+1. Make sure the domain is DNS resolvable:
 ````
 brian@fedora:~$ nslookup test.local
 Server:         127.0.0.53
